@@ -10,7 +10,7 @@ def track_marker():
         ret, frame = cap.read()
         if not ret:
             break
-
+            
         frame = cv2.resize(frame, frame_size, interpolation=cv2.INTER_LINEAR)
         hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
