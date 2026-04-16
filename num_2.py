@@ -14,7 +14,6 @@ def track_marker():
         frame = cv2.resize(frame, frame_size, interpolation=cv2.INTER_LINEAR)
         hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
-        # 🔴 Красный цвет (два диапазона, т.к. красный на границе HSV)
         lower_red1 = np.array([0, 150, 50])
         upper_red1 = np.array([10, 255, 255])
         lower_red2 = np.array([170, 150, 50])
